@@ -2,9 +2,9 @@
 AboutMe
 
 ## Repository Links
-- [https://github.com/MichaelJBaumli/MichaelJBaumli/] (https://github.com/MichaelJBaumli/MichaelJBaumli/) (Source)
-- [https://michaeljbaumli.github.io/MichaelJBaumli/] (https://michaeljbaumli.github.io/MichaelJBaumli/) (Web Page)
-
+- [Webpage](https://michaeljbaumli.github.io/working-with-markdown/ "Working With Markdown Webpage")
+- [https://github.com/MichaelJBaumli/MichaelJBaumli/] (https://github.com/MichaelJBaumli/MichaelJBaumli/ "About Me Source") 
+- [https://michaeljbaumli.github.io/MichaelJBaumli/] (https://michaeljbaumli.github.io/MichaelJBaumli/ "About Me Web Page") (
 ## About
 
 This repository will be used for mostly class work. 
