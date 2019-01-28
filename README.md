@@ -24,4 +24,5 @@ This repository will be used for mostly class work.
 ## Contributors
 
 * Michael J. Baumli - Computer Science 
-[GiantSteps-Ireland.jpg]
+
+![image of myself in ireland](https://github.com/MichaelJBaumli/MichaelJBaumli/blob/master/GiantSteps-Ireland.jpg) 
