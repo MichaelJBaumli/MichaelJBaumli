@@ -3,7 +3,7 @@ AboutMe
 
 ## Repository Links
 - [https://github.com/MichaelJBaumli/MichaelJBaumli/] (https://github.com/MichaelJBaumli/MichaelJBaumli/) (Source)
-* [https://michaeljbaumli.github.io/MichaelJBaumli/] (https://michaeljbaumli.github.io/MichaelJBaumli/) (Web Page)
+- [https://michaeljbaumli.github.io/MichaelJBaumli/] (https://michaeljbaumli.github.io/MichaelJBaumli/) (Web Page)
 
 ## About
 
