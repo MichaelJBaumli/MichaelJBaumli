@@ -1,14 +1,45 @@
 body{
     
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(./images/background.jpg);
 }
 
 h1{ 
-    padding-top: 1em;
+    padding-top: .25em;
     border-style: solid;
     background-color: blue;
+    text-align: center;
+    padding-bottom: .25em;
+    border-radius: .25em;
 
 
+}
+
+nav{ 
+ padding: 1em;   
+ text-align: center;
+ background-color: skyblue;
+display: block;
+}
+
+section{
+    padding:2em;
+    background-color: bisque;
+    border: .25em;
+    border-color:black;
+    border-style: solid;
+    border-radius: .5em;
+    opacity: .85;
+}
+
+aside{
+    padding:2em;
+    background-color:bisque;
+    border: .25em;
+    border-color:black;
+    border-style: solid;
+    border-radius: .5em;
+    opacity: .85;
 }
 
 .important {
