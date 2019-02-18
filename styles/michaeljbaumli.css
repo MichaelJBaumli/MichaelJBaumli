@@ -16,6 +16,29 @@ h1{
 
 }
 
+table{
+    background-color: grey;
+    border-style: solid;
+    padding: .25em;
+    border-radius: .25em;
+
+}
+
+tr{
+    border-style: solid;
+    padding: .15em;
+}
+
+th{
+    border-style: solid;
+    padding: .15em;
+}
+
+td{
+    border-style: solid;
+    padding: .15em;
+}
+
 nav{ 
  padding: 1em;   
  text-align: center;
