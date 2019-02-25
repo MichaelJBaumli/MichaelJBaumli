@@ -6,6 +6,13 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <meta name="author"content = "Michael J Baumli">
 
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -46,25 +53,24 @@
         <script>
            console.log('SCRIPT START')
 
-console.log('Declare testable functions.....................')
+        console.log('Declare testable functions.....................')
 
-function convert(x) {
-  return x*0.453592
-}
-console.log('Defined convert=' + convert)
+        function convert(x) {
+        return x*0.453592
+        }
 
-console.log('Declare event listeners .......................')
+        console.log('Defined convert=' + convert)
 
-document.getElementById('clicker').addEventListener('click', function () {
+        console.log('Declare event listeners .......................')
 
-  const i = parseInt(document.getElementById('weight').value)
-  console.log('i=' + i)
+        document.getElementById('clicker').addEventListener('click', function () {
+            const i = parseInt(document.getElementById('weight').value)
+            console.log('i=' + i)
+            const ans =  'This weight in kilograms is ' + convert(i) + '.'
+        document.getElementById('result').innerHTML = ans
+        })
 
-  const ans =  'This weight in kilograms is ' + convert(i) + '.'
-  document.getElementById('result').innerHTML = ans
-})
-
-console.log('SCRIPT END')
+        console.log('SCRIPT END')
         </script>
         <footer>
             <ul id="myname">
