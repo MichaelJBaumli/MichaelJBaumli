@@ -37,7 +37,27 @@
             </section>   
         </main>
         <script>
-           
+           console.log('SCRIPT START')
+
+console.log('Declare testable functions.....................')
+
+function convert(x) {
+  return x*0.453592
+}
+console.log('Defined divide=' + divide)
+
+console.log('Declare event listeners .......................')
+
+document.getElementById('clicker').addEventListener('click', function () {
+
+  const i = parseInt(document.getElementById('weight').value)
+  console.log('i=' + i)
+
+  const ans = s + ', the average number of students is ' + convert(i) + '.'
+  document.getElementById('result').innerHTML = ans
+})
+
+console.log('SCRIPT END')
         </script>
         <footer>
             <ul id="myname">
