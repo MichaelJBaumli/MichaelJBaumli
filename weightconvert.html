@@ -26,13 +26,19 @@
                     <li><a  href="./weightconvert.html">Convert</a></li>
                 </ul>
         </header>
-        <main> 
+        <main class="container-fluid"> 
             <section>
             <form>
                 <label>Enter a weight in pounds.</label>
                 <br>
                 <input id="weight" type="number" value="222">
                 <br>
+                <button id="clicker" class="btn btn-primary">Click for Result</button>
+                <br>
+            
+                <br>
+                
+                <p id="result"></p>
             </form>
             </section>   
         </main>
@@ -44,7 +50,7 @@ console.log('Declare testable functions.....................')
 function convert(x) {
   return x*0.453592
 }
-console.log('Defined divide=' + divide)
+console.log('Defined convert=' + convert)
 
 console.log('Declare event listeners .......................')
 
@@ -53,7 +59,7 @@ document.getElementById('clicker').addEventListener('click', function () {
   const i = parseInt(document.getElementById('weight').value)
   console.log('i=' + i)
 
-  const ans = s + ', the average number of students is ' + convert(i) + '.'
+  const ans =  'This weight in kilograms is ' + convert(i) + '.'
   document.getElementById('result').innerHTML = ans
 })
 
@@ -70,5 +76,14 @@ console.log('SCRIPT END')
                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         </footer>
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
     </body>
 </html>
