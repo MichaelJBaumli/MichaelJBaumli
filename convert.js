@@ -1,13 +1,23 @@
-function convert(x) {
-    return x*0.453592
-    }
 
-QUnit.test("convert", function(assert) {
-	assert.equal(convert(0), 0, "0 lb == 0 kg");
-	assert.equal(convert(1), 0.453592, "1 lb == 0.43592");
-	assert.equal(convert(2), 0.907184, "2 lb == 0.907184");
-	assert.equal(convert(3), 1.360776, "3 lb == 1.360776");
-	assert.equal(convert(10), 4.53592, "10 lb == 4.53592");
-	assert.equal(convert(332549), 150841.566008, "332549 lb == 150841.566008");
-	assert.equal(convert(-1), -0.453592, "-1 lb == -0.43592");
- });
+console.log('SCRIPT START')
+window.addEventListener('load', (event) =>{
+console.log('Declare testable functions.....................')
+
+function convert(x) {
+return x*0.453592
+}
+
+console.log('Defined convert=' + convert)
+
+console.log('Declare event listeners .......................')
+
+document.getElementById('clicker').addEventListener('click', function () {
+ const i = parseInt(document.getElementById('weight').value)
+ console.log('i=' + i)
+ const ans =  'This weight in kilograms is ' + convert(i) + '.'
+document.getElementById('result').innerHTML = ans
+})
+
+})
+
+console.log('SCRIPT END')
