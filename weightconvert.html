@@ -37,11 +37,15 @@
         <main class="container-fluid"> 
             <section>
             <form>
+                <p>Enter your name:
+                            <input id="guest" type="text" value="Bob">
+                </p>
                 <label>Enter a weight in pounds.</label>
                 <br>
                 <input id="weight" type="number" value="222">
                 <br>
-                <button type="button" id="clicker" class="btn btn-primary" onclick="callfunc()">Click for Result</button>
+                <button type="button" id="clicker" class="btn btn-primary">Click for Result</button>
+                <button id="wiper" class="btn btn-danger">Dump Contents</button>
                 <br>
             
                 <br>
@@ -63,11 +67,46 @@
 
         console.log('Declare event listeners .......................')
 
-        document.getElementById('clicker').addEventListener('click', function () {
-            const i = parseInt(document.getElementById('weight').value)
-            console.log('i=' + i)
-            const ans =  'This weight in kilograms is ' + convert(i) + '.'
+        window.addEventListener('load', (event) => {
+      console.log('  Starting initialization ')
+      if (localStorage.getItem('guest')) {
+        document.getElementById('guest').value = localStorage.getItem('guest')
+        console.log(`  Stored guest = ${localStorage.guest}`)
+      }
+
+      if (localStorage.getItem('lbs')) {
+        document.getElementById('weight').value = parseInt(localStorage.lbs)
+        console.log(`  Stored pounds = ${localStorage.lbs}`)
+      }
+      console.log('  Finished initialization')
+    })
+
+    document.getElementById('clicker').addEventListener('click', () => {
+         console.log('  Starting clicker click handler')
+        const origCount = parseInt(localStorage.getItem('countOfClicks')) || 0
+        const s = document.getElementById('guest').value
+        console.log('s=' + s)
+        const i = parseInt(document.getElementById('weight').value)
+        console.log('i=' + i)
+        const ct = origCount + 1
+        const ans =  'This weight in kilograms is ' + convert(i) + '. This has been run ' + ct + ' times.'
         document.getElementById('result').innerHTML = ans
+        localStorage.setItem('countOfClicks', ct)  // define a string key to store + its value
+        localStorage.setItem('guest', s)
+        localStorage.setItem('lbs', i)
+
+
+
+        console.log('  Finished clicker click handler')
+        })
+  
+        document.getElementById('wiper').addEventListener('click', () => {
+      console.log('  Starting wiper click handler')
+            localStorage.removeItem('countOfClicks')
+            localStorage.removeItem('guest')
+            localStorage.removeItem('weight')
+
+            console.log('  Finished wiper click handler - localStorage entries removed')
         })
 
         console.log('SCRIPT END')
